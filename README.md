@@ -73,6 +73,9 @@ pip install -e ".[dev]"
 
 pwcli --help
 ```
+## Changelog
+
+See [CHANGELOG.md](CHANGELOG.md).
 
 ## License
 
