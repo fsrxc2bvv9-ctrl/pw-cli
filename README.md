@@ -45,16 +45,18 @@ Threat model: pw-cli protects your vault if the vault file is copied or leaked w
 
 For highly sensitive accounts, consider using a professionally audited password manager.
 
-Installation from source
+## Installation from source
 
-git clone https://github.com/YOUR_USERNAME/pw-cli.git
+```bash
+git clone https://github.com/fsrxc2bvv9-ctrl/pw-cli.git
 cd pw-cli
+
 # Recommended
 uv pip install -e ".[dev]"
+
 # Or with pip
 pip install -e ".[dev]"
-pwcli --help
 
-License
+pwcli --help
 
 MIT
