@@ -19,7 +19,7 @@ app = typer.Typer(
 
 @app.callback(invoke_without_command=True)
 def phrase_root(
-    ctx: typer.Context | None = None,
+    ctx: typer.Context,
     words: int | None = typer.Option(None, "--words", "-w", help="Number of words"),
     separator: str | None = typer.Option(None, "--separator", "-s", help="Separator character"),
     capitalize: bool | None = typer.Option(
