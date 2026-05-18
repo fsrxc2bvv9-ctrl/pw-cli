@@ -27,7 +27,7 @@ classifiers = [
 ]
 dependencies = [
     "typer>=0.25.1",
-    "rich>=13.7.0,<15.0.0",
+    "rich>=13.7.0,<14.0.0",
     "pyperclip>=1.9.0",
     "platformdirs>=4.2.0",
     "cryptography>=43.0.0,<44.0.0",
