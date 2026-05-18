@@ -1,4 +1,5 @@
 from __future__ import annotations
+
 import typer
 
 from pwcli.commands.config import app as config_app
