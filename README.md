@@ -58,7 +58,12 @@ Restart your terminal afterwards.
 **Threat model:** `pw-cli` protects your vault if the vault file is copied or leaked without the master password. It does **not** protect against malware, keyloggers, compromised terminals, screen recording, clipboard monitoring, or a weak master password.
 
 For highly sensitive accounts, consider using a professionally audited password manager.
+## Installation
 
+```bash
+pip install pw-cli
+
+```
 ## Installation from source
 
 ```bash
