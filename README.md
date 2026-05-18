@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/fsrxc2bvv9-ctrl/pw-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/fsrxc2bvv9-ctrl/pw-cli/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Python](https://img.shields.io/badge/Python-3.9%2B-blue)](https://www.python.org)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue)](https://www.python.org)
 
 **Modern CLI Password Generator with an Encrypted Local Vault**
 
