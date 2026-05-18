@@ -1,0 +1,77 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pw-cli"
+version = "0.1.0"
+description = "Modern CLI password generator with an encrypted local vault"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+authors = [
+    { name = "Alex" },
+]
+keywords = ["password", "cli", "security", "vault", "passphrase"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Security",
+    "Topic :: Utilities",
+]
+dependencies = [
+    "typer>=0.12.0",
+    "rich>=13.7.0",
+    "pyperclip>=1.9.0",
+    "platformdirs>=4.2.0",
+    "cryptography>=43.0.0",
+    "tomli>=2.0.0; python_version < '3.11'",
+    "tomli-w>=1.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-cov>=4.0",
+    "ruff>=0.8.0",
+    "mypy>=1.10.0",
+    "build>=1.2.0",
+    "twine>=5.0.0",
+]
+
+[project.scripts]
+pwcli = "pwcli.cli:app"
+
+[project.urls]
+Homepage = "https://github.com/YOUR_USERNAME/pw-cli"
+Repository = "https://github.com/YOUR_USERNAME/pw-cli"
+Issues = "https://github.com/YOUR_USERNAME/pw-cli/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+pwcli = ["data/*.txt"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.mypy]
+python_version = "3.9"
+packages = ["pwcli"]
+ignore_missing_imports = true
