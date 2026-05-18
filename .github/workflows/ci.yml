@@ -38,7 +38,3 @@ jobs:
 
       - name: Run tests
         run: pytest
-        run: ruff check .
-
-      - name: Run tests
-        run: pytest
