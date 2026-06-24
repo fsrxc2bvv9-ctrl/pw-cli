@@ -1,6 +1,6 @@
 # pw-cli
 
-[![CI](https://github.com/fsrxc2bvv9-ctrl/pw-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/fsrxc2bvv9-ctrl/pw-cli/actions/workflows/ci.yml)
+[![CI](https://github.com/aleksei-khvostov/pw-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/aleksei-khvostov/pw-cli/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue)](https://www.python.org)
 
@@ -67,7 +67,7 @@ pip install pw-cli
 ## Installation from source
 
 ```bash
-git clone https://github.com/fsrxc2bvv9-ctrl/pw-cli.git
+git clone https://github.com/aleksei-khvostov/pw-cli.git
 cd pw-cli
 
 # Recommended
